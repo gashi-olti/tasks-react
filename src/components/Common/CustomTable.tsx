@@ -33,18 +33,18 @@ export default function CustomTable({
           <Col xs={24} md={12}>
             <Flex justifyContent="flex-end" alignContent="flex-end">
               <Space direction="horizontal">
-                <PDFDownloadLink
+                {/* <PDFDownloadLink
                   document={<TableList />}
                   fileName={`${new Date()}-Tasks`}
                 >
-                  {({ blob, url, loading, error }) => (
-                    <Button
-                      icon={<FilePdfOutlined />}
-                      tw="bg-blue-500 text-white"
-                      //   loading={loading}
-                    />
-                  )}
-                </PDFDownloadLink>
+                  {({ blob, url, loading, error }) => ( */}
+                <Button
+                  icon={<FilePdfOutlined />}
+                  tw="bg-blue-500 text-white"
+                  //   loading={loading}
+                />
+                {/* )}
+                </PDFDownloadLink> */}
                 <ButtonGroup>
                   <Button tw="bg-green-500 text-white" onClick={onButtonClick}>
                     Create New
